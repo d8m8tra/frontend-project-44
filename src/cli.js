@@ -7,7 +7,4 @@ const getName = () => {
   return userName
 }
 
-const userName = getName() // Вызов функции и сохранение значения в переменной
-
-export { userName }
 export default getName
