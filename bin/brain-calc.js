@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import brainGames from './brain-games.js'
+import brainGames from '../bin/brain-games.js'
 import calc from '../src/games/calc.js'
 import getName from '../src/cli.js'
 
