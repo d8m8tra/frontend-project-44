@@ -1,41 +1,40 @@
-import readlineSync from 'readline-sync'
+import randomNumber from '../rnd.js'
+import startGame from '../index.js'
 
-const calc = (userName) => {
-  console.log('What is the result of the expression?')
+// правила игры
+const textForGame = 'What is the result of the expression?'
 
-  for (let count = 0; count < 3; count += 1) {
-    let randomNumber = Math.random()
-    let firstNumber = Math.floor(Math.random() * 100)
-    let secondNumber = Math.floor(Math.random() * 100)
-    let resultOfExpression = 0
-    let textForQuestion = ''
+// вопрос юзеру и правильный ответ
+const usrQuestionAndCorrectAnsw = () => {
+  let correctAnsw = 0
+  let usrQuestion = ''
+  let firstNumber = randomNumber()
+  let secondNumber = randomNumber()
+  let randomNbr = randomNumber()
 
-    switch (true) {
-      case (randomNumber < 0.35):
-        resultOfExpression = firstNumber + secondNumber
-        textForQuestion = `${firstNumber} + ${secondNumber}`
-        break
-      case (randomNumber > 0.35 && randomNumber < 0.7):
-        resultOfExpression = firstNumber - secondNumber
-        textForQuestion = `${firstNumber} - ${secondNumber}`
-        break
-      default:
-        resultOfExpression = firstNumber * secondNumber
-        textForQuestion = `${firstNumber} * ${secondNumber}`
-        break
-    }
+  switch (true) {
+    case (randomNbr < 35):
+      correctAnsw = firstNumber + secondNumber
+      usrQuestion = `${firstNumber} + ${secondNumber}`
 
-    console.log(`Question: ${textForQuestion}`)
-    let userAnswer = readlineSync.questionInt('You answer: ')
+      return { correctAnsw, usrQuestion }
 
-    if (userAnswer === resultOfExpression) {
-      console.log('Correct!')
-    }
-    else {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${resultOfExpression}'.`)
-    }
+    case (randomNbr > 35 && randomNbr < 70):
+      correctAnsw = firstNumber - secondNumber
+      usrQuestion = `${firstNumber} - ${secondNumber}`
+
+      return { correctAnsw, usrQuestion }
+
+    default:
+      correctAnsw = firstNumber * secondNumber
+      usrQuestion = `${firstNumber} * ${secondNumber}`
+
+      return { correctAnsw, usrQuestion }
   }
-  console.log(`Congratulations, ${userName}!`)
 }
 
-export default calc
+const calcGame = () => {
+  startGame(textForGame, usrQuestionAndCorrectAnsw)
+}
+
+export default calcGame
