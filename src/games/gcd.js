@@ -1,11 +1,28 @@
-const gcd = () => {
-  
+import randomNumber from '../rnd.js'
+import startGame from '../index.js'
 
-// Начинаем с двух чисел, назовем их a и b.
-// Проверяем, не равно ли b нулю:
-// Если b равно 0, то НОД равен a.
-// Если b не равно 0, обновляем значения:
-// Присваиваем a значение b, а b — остаток от деления a на b.
-// Повторяем шаги 2 и 3, пока b не станет равным 0.
-// Когда b станет 0, a будет содержать НОД.
+// правила игры
+const textForGame = 'Find the greatest common divisor of given numbers.'
+
+// вопрос юзеру и правильный ответ
+const usrQuestionAndCorrectAnsw = () => {
+  let correctAnsw = 0
+  let firstNumber = randomNumber()
+  let secondNumber = randomNumber()
+  let usrQuestion = `${firstNumber} ${secondNumber}`
+
+  while (secondNumber !== 0) {
+    [firstNumber, secondNumber] = [secondNumber, firstNumber % secondNumber]
+    if (secondNumber === 0) {
+      correctAnsw = firstNumber
+    }
+  }
+
+  return { correctAnsw, usrQuestion }
 }
+
+const gcdGame = () => {
+  startGame(textForGame, usrQuestionAndCorrectAnsw)
+}
+
+export default gcdGame
