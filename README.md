@@ -14,4 +14,4 @@ make brain-gcd: https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt
 make brain-progression: https://asciinema.org/a/2h7sdtWxQLj04XBX6Pnr4gTdE
 
 make brain-prime: 
-<script src="https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f.js" id="asciicast-QsfO3lXr1YnVa3r42xCEfEs6f" async="true"></script>
+<a href="https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f" target="_blank"><img src="https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f.svg" /></a>
