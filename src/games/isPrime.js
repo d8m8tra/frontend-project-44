@@ -9,24 +9,20 @@ const isPrime = (number) => {
   let result = ''
 
   if (number === 2) {
-    result = 'yes'
+    return 'yes'
   }
-  else if (number < 2 || number % 2 === 0) {
-    result = 'no'
-  }
-  else {
-    result = 'yes'
+  if (number < 2 || number % 2 === 0) {
+    return 'no'
   }
 
-  let finishValue = Math.sqrt(number)
+  const finishValue = Math.sqrt(number)
 
   for (let startValue = 3; startValue <= finishValue; startValue += 1) {
     if (number % startValue === 0) {
-      result = 'no'
+      return 'no'
     }
+    return 'yes'
   }
-
-  return result
 }
 // вопрос юзеру и правильный ответ на вопрос
 const usrQuestionAndCorrectAnsw = () => {
