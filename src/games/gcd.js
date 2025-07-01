@@ -7,15 +7,18 @@ const textForGame = 'Find the greatest common divisor of given numbers.'
 // вопрос юзеру и правильный ответ
 const usrQuestionAndCorrectAnsw = () => {
   let correctAnsw = 0
-  let firstNumber = randomNumber() + 1
-  let secondNumber = randomNumber() + 1
+  let firstNumber = randomNumber()
+  let secondNumber = randomNumber()
   let usrQuestion = `${firstNumber} ${secondNumber}`
 
-  while (secondNumber !== 0) {
-    [firstNumber, secondNumber] = [secondNumber, firstNumber % secondNumber]
-    if (secondNumber === 0) {
-      correctAnsw = firstNumber
+  if (secondNumber === 0) {
+    correctAnsw = firstNumber
+  }
+  else {
+    while (secondNumber !== 0) {
+      [firstNumber, secondNumber] = [secondNumber, firstNumber % secondNumber]
     }
+    correctAnsw = firstNumber
   }
 
   return { correctAnsw, usrQuestion }
