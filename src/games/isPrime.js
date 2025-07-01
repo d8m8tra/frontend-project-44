@@ -36,7 +36,6 @@ const isPrime = (number) => {
 const usrQuestionAndCorrectAnsw = () => {
   const usrQuestion = randomNumber()
   const correctAnsw = isPrime(usrQuestion)
-  console.log('correct answer for test = ' + correctAnsw)
 
   return { usrQuestion, correctAnsw }
 }
