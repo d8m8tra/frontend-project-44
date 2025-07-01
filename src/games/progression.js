@@ -21,7 +21,7 @@ const usrQuestionAndCorrectAnsw = () => {
   let rndIndexForHide = Math.floor(Math.random() * (myArray.length - 1))
   let correctAnsw = myArray[rndIndexForHide]
   myArray[rndIndexForHide] = '..'
-  let usrQuestion = myArray
+  let usrQuestion = myArray.join(' ')
 
   return { usrQuestion, correctAnsw }
 }
