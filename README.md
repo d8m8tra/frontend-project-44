@@ -2,12 +2,16 @@
 [![Actions Status](https://github.com/d8m8tra/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/d8m8tra/frontend-project-44/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=d8m8tra_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=d8m8tra_frontend-project-44)
 
-brain-even: https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f
 
-brain-calc: https://asciinema.org/a/iUrqURLTE1O4JSOnAjBDd5ArB
+For start the games use Makefile (make):
 
-brain-gcd: https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt
+make brain-even: https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f
 
-brain-progression: https://asciinema.org/a/2h7sdtWxQLj04XBX6Pnr4gTdE
+make brain-calc: https://asciinema.org/a/iUrqURLTE1O4JSOnAjBDd5ArB
 
-brain-prime: https://asciinema.org/a/GR20vZ1ljlDnBaV2O1boY2ry0
+make brain-gcd: https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt
+
+make brain-progression: https://asciinema.org/a/2h7sdtWxQLj04XBX6Pnr4gTdE
+
+make brain-prime: 
+<script src="https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f.js" id="asciicast-QsfO3lXr1YnVa3r42xCEfEs6f" async="true"></script>
