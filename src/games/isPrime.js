@@ -18,10 +18,9 @@ const isPrime = (number) => {
     result = 'yes'
   }
 
-  let startValue = 3
   let finishValue = Math.sqrt(number)
 
-  for (startValue = 3; startValue <= finishValue; startValue += 1) {
+  for (let startValue = 3; startValue <= finishValue; startValue += 1) {
     if (number % startValue === 0) {
       result = 'no'
     }
