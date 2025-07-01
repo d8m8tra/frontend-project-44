@@ -2,7 +2,7 @@ import randomNumber from '../rnd.js'
 import startGame from '../index.js'
 
 // правила игры
-const textForGame = '"yes" if given number is prime. Otherwise answer "no".'
+const textForGame = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 // простое ли число?
 const isPrime = (number) => {
