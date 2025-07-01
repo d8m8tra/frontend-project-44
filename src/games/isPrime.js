@@ -6,8 +6,6 @@ const textForGame = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 // простое ли число?
 const isPrime = (number) => {
-  let result = ''
-
   if (number === 2) {
     return 'yes'
   }
