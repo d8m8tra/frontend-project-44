@@ -5,22 +5,27 @@
 
 
 
-Start the game Brain-Even:
-brain-even
+
+### Start the game Brain-Even:
+`brain-even` <br>
 <a href="https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f" target="_blank"><img src="https://asciinema.org/a/QsfO3lXr1YnVa3r42xCEfEs6f.svg" /></a>
 
-Start the game Brain-Calc:
-brain-calc
+
+### Start the game Brain-Calc:
+`brain-calc` <br>
 <a href="https://asciinema.org/a/iUrqURLTE1O4JSOnAjBDd5ArB" target="_blank"><img src="https://asciinema.org/a/iUrqURLTE1O4JSOnAjBDd5ArB.svg" /></a>
 
-Start the game Brain-Gcd:
-brain-gcd
-<a href="https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt" target="_blank"><img src="https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt.svg" /></a>
 
-Start the game Brain-Progression:
-brain-progression
+### Start the game Brain-Progression:
+`brain-progression` <br>
 <a href="https://asciinema.org/a/2h7sdtWxQLj04XBX6Pnr4gTdE" target="_blank"><img src="https://asciinema.org/a/2h7sdtWxQLj04XBX6Pnr4gTdE.svg" /></a>
 
-Start the game Brain-Prime:
-brain-prime
+
+### Start the game Brain-Prime:
+`brain-prime` <br>
 <a href="https://asciinema.org/a/GR20vZ1ljlDnBaV2O1boY2ry0" target="_blank"><img src="https://asciinema.org/a/GR20vZ1ljlDnBaV2O1boY2ry0.svg" /></a>
+
+
+### Start the game Brain-Gcd:
+`brain-gcd` <br>
+<a href="https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt" target="_blank"><img src="https://asciinema.org/a/yaF5YigChp9agnZKNptvM2cbt.svg" /></a>
