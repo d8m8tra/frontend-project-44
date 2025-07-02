@@ -19,8 +19,8 @@ const isPrime = (number) => {
     if (number % startValue === 0) {
       return 'no'
     }
-    return 'yes'
   }
+  return 'yes'
 }
 // вопрос юзеру и правильный ответ на вопрос
 const usrQuestionAndCorrectAnsw = () => {
